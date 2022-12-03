@@ -1,0 +1,67 @@
+.header {
+    background: $black-bg;
+    color: #7D7D7D;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 175px;
+        img {
+            margin-right: 40px;
+        }
+        div {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            cursor: pointer;
+            span {
+                &:nth-child(1) {
+                    font-weight: 600;
+                    color: #BCBCBC;
+                }
+            }
+        }
+    }
+    &__nav {
+        margin-right: 103px;
+        width: 551px;
+        &_list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_item {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            cursor: pointer;
+            &:hover {
+                color: #5a5858;
+            }
+            &:nth-child(1) {
+                font-weight: 600;
+                color: #BCBCBC;
+            }
+        }
+    }
+    &__menu {
+        width: 152px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 24px;
+        cursor: pointer;
+    }
+    &__cart {
+        width: 50px;
+        height: 50px;
+        border: 1px solid $main-white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

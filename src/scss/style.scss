@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
+@import './base/variables';
+
+@import './blocks/whiteCircle';
+@import './blocks/header';
+@import './blocks/title';
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    max-width: 1218px;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
