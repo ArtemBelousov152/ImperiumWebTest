@@ -1,0 +1,98 @@
+.footer {
+    height: 700px;
+    background: $black-bg;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    span {
+        color: #BCBCBC;
+    }
+    &__container {
+        background: $main-white;
+        height: 671px;
+        margin: 0 0 19px 16px;
+        padding: 100px 350px 100px 350px
+    }
+    &__header {
+        width: 407;
+        display: flex;
+        align-items: center;
+        &_logo {
+            margin-right: 50px;
+        }
+        &_telegramm {
+            margin-right: 16px;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        display: flex;
+        margin-top: 49px;
+    }
+    &__contancts {
+        width: 352px;
+        margin-right: 167px;
+        &_grid {
+            row-gap: 16px;
+            column-gap: 48px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+    &__name {
+        grid-column: 1 / 3;
+    }
+    &__adress {
+        grid-column: 1 / 3;
+    }
+    &__policy {
+        margin-top: 68px;
+        color: #7D7D7D;
+        a {
+            color: #7D7D7D;
+        }
+    }
+    &__about {
+        row-gap: 56px;
+        column-gap: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        h2 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 24px;
+            color: #333333;
+        }
+        a {
+            text-decoration: none;
+            margin-bottom: 16px;
+            color: #333333;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__some {
+        &_first {
+            margin-top: 46px;
+        }
+    }
+    &__circle {
+        position: absolute;
+        top: -95px;
+        right: 0;
+        text-align: center;
+        background: none;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__imperium {
+        position: absolute;
+        bottom: 17px;
+        right: 0;
+    }
+}

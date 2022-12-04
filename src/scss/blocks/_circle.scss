@@ -1,11 +1,10 @@
-.whiteCircle {
+.circle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
     border-radius: 1000px;
-    transform: rotate(15deg);
     width: 150px;
     height: 150px;
     font-weight: 600;
@@ -13,7 +12,8 @@
     line-height: 20px;
     cursor: pointer;
     transition: all .5s;
-    &:hover {
-        transform: rotate(0);
+    &-orange {
+        color: #F64F00;
+        border: 1px solid #F64F00;
     }
 }
