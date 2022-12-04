@@ -1,0 +1,91 @@
+.store {
+    padding-top: 100px;
+    height: 711px;
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+    }
+    &__slider {
+        margin-top: 40px;
+        &_prev {
+            transform: rotateY(180deg);
+            border-left: none;
+        }
+        &_prev, &_next {
+            transition: all .5s;
+            &:hover {
+                border-color: rgb(0, 0, 0);
+            }
+        }   
+    }
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sliderBtns {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        width: 155px;
+        height: 58px;
+    }
+    &__card {
+        width: 282px;
+        height: 415px;
+        &_descr {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &_price {
+            margin-top: 6px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &_btns {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_graphBtn {
+            cursor: pointer;
+            width: 64px;
+            height: 50px;
+            border: 1px solid #BCBCBC;
+            border-radius: 30px 0px 0px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+            &:hover {
+                box-shadow: 1px 1px 3px black;
+            }
+        }
+        &_more {
+            cursor: pointer;
+            width: 207px;
+            height: 50px;
+            border: 1px solid #333333;
+            border-radius: 0px 30px 30px 0px;
+            display: flex;
+            align-items: center;
+            padding-left: 24px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            transition: all .3s;
+            &:hover {
+                box-shadow: 1px 1px 3px black;
+            }
+            span {
+                margin-right: 53px;
+            }
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

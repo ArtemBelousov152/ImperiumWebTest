@@ -3,11 +3,13 @@
 @import './base/variables';
 @import './base/icon_fonts';
 
+@import './blocks/slideArrow';
 @import './blocks/circle';
 @import './blocks/header';
 @import './blocks/title';
 @import './blocks/discount';
 @import './blocks/footer';
+@import './blocks/store';
 
 * {
     font-family: 'Raleway', sans-serif;

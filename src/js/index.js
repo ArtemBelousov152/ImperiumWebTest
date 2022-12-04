@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import CircleType from 'circletype';
 
 window.addEventListener("DOMContentLoaded", () => {
-    const slider = new Swiper('.title__slider', {
+    const sliderTitle = new Swiper('.title__slider', {
         slidesPerView: 1.7,
         initialSlide: 1,
         centeredSlides: true,
@@ -11,10 +11,19 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
     document.querySelector('.title__slider_prev').addEventListener('click', () => {
-        slider.slideNext();
+        sliderTitle.slideNext();
     })
     document.querySelector('.title__slider_next').addEventListener('click', () => {
-        slider.slidePrev();
+        sliderTitle.slidePrev();
+    })
+
+    const sliderSticks = new Swiper('.store__slider')
+    
+    document.querySelector('.store__slider_prev').addEventListener('click', () => {
+        sliderSticks.slideNext();
+    })
+    document.querySelector('.store__slider_next').addEventListener('click', () => {
+        sliderSticks.slidePrev();
     })
 
     const circles = document.querySelectorAll('.title__slide_text')

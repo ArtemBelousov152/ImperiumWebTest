@@ -1,0 +1,15 @@
+.slideArrow {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78px;
+    height: 58px;
+    border: 1px solid rgba(125, 125, 125, 0.8);
+    border-radius: 0px 30px 30px 0px;
+    z-index: 100;
+    transition: all .6s;
+    img {
+        transform: rotateY(180deg);
+    }
+}

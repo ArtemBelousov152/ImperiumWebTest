@@ -53,6 +53,12 @@
         justify-content: space-between;
         margin-right: 24px;
         cursor: pointer;
+        img {
+            transition: all .5s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
     &__cart {
         width: 50px;
@@ -63,5 +69,9 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            border-color: #838282;
+        }
     }
 }

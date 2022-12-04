@@ -22,40 +22,26 @@
         .swiper-slide-prev, .swiper-slide-next {
             transform: scale(0.8);
         }
-        &_prev, &_next {
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            width: 78px;
-            height: 58px;
-            border: 1px solid rgba(125, 125, 125, 0.8);
-            border-radius: 0px 30px 30px 0px;
-            z-index: 100;
-            transition: all .6s;
-            &:hover {
-                border: 1px solid rgba(202, 202, 202, 0.8);
-            }
-            img {
-                transform: rotateY(180deg);
-            }
-        }
         &_next {
-            position: absolute;
             left: 15%;
             transform: rotateY(180deg);
             top: 50%;
         }
         &_prev {
-            position: absolute;
             right: 21.5%;
             top: 50%;
         }
+        &_prev, &_next {
+            position: absolute;
+            &:hover {
+                border: 1px solid rgba(202, 202, 202, 0.8);
+            }
+        }
+        
     }
     &__slide {
         position: relative;
-        transition: all .6s;
+        transition: transform .6s;
         &_descr {
             font-weight: 400;
             font-size: 16px;

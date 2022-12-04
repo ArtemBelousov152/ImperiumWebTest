@@ -22,7 +22,17 @@
             margin-right: 50px;
         }
         &_telegramm {
+            transition: all .5s;
             margin-right: 16px;
+            &:hover {
+                transform: rotateZ(-30deg);
+            }
+        }
+        &_vk {
+            transition: all .5s;
+            &:hover {
+                transform: rotateZ(30deg);
+            }
         }
     }
     &__wrapper {
@@ -69,6 +79,10 @@
             text-decoration: none;
             margin-bottom: 16px;
             color: #333333;
+            transition: all .4s;
+            &:hover {
+                text-shadow: 1px 1px 3px rgb(105, 105, 105);
+            }
         }
         div {
             display: flex;
