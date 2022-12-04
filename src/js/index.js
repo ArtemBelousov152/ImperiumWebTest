@@ -17,7 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
         sliderTitle.slidePrev();
     })
 
-    const sliderSticks = new Swiper('.store__slider')
+    const sliderSticks = new Swiper('.store__slider', {
+        initialSlide: 1
+    })
     
     document.querySelector('.store__slider_prev').addEventListener('click', () => {
         sliderSticks.slideNext();
