@@ -31,4 +31,23 @@ window.addEventListener("DOMContentLoaded", () => {
         new CircleType(item);
     })
     
+    // const rect = document.querySelector('.title__slide_text');
+    // let a = 1, b = 0, c = 0, d = 1, tx = 10, ty = 10, angle = 0, currentAngle;
+
+    // function getAngleToRAD(){
+    //     if(angle === 360){
+    //         angle = 0;
+    //     }
+
+    //     return angle++ * Math.PI / 180;
+    // }
+    
+    // function update(){
+    //     currentAngle = getAngleToRAD();
+
+    //     rect.style.transform = 'matrix(' + Math.cos(currentAngle) + ',' + Math.sin(currentAngle) + ',' + -Math.sin(currentAngle) + ',' + Math.cos(currentAngle) + ',' + tx + ',' + tx + ')'
+    //     window.requestAnimationFrame(update);
+    // }
+
+    // update();
 })

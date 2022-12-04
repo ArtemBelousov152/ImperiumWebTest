@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: #FFFFFF;
     border-radius: 1000px;
     width: 150px;
@@ -15,5 +16,9 @@
     &-orange {
         color: #F64F00;
         border: 1px solid #F64F00;
+        background: none;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

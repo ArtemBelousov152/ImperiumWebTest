@@ -17,8 +17,6 @@
         display: block;
         margin: 22px auto 0 auto;
         height: 601px;
-        // width: 992px;
-        // border-radius: 100px 0px;
         .swiper-slide-prev, .swiper-slide-next {
             transform: scale(0.8);
         }
@@ -65,10 +63,16 @@
             }
         }
         &_text {
+            // animation: 15s linear 0s normal none infinite running rotate;
+            animation-name: rotate;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
             font-weight: 400;
             font-size: 14px;
             line-height: 12px;
             color: $main-white;
+            text-transform: lowercase;
         }
         &_circle {
             position: relative;

@@ -1,0 +1,91 @@
+.brend {
+    position: relative;
+    padding: 100px 0 0 190px;
+    background: $black-bg;
+    &__zaryad {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 505px;
+    }
+    &__header {
+        text-align: center;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        color: $main-white;
+    }
+    &__descr {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #D8D8D8;
+    }
+    &__player {
+        margin-top: 55px;
+        position: relative;
+        img {
+            position: absolute;
+            left: 0;
+        }
+    }
+    &__circle {
+        position: absolute;
+        right: 191px;
+        top: 350px;
+    }
+    &__about {
+        display: grid;
+        grid-template-columns: auto 600px;
+        column-gap: 134px;
+        margin-top: 719px;
+        padding: 100px 351px 100px 160px;
+        background: $main-white;
+        border-radius: 80px 0 0 80px;
+        &_header {
+            text-align: left;
+            width: 491px;
+            height: 148px
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 52px;
+        }
+        &_descr {
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &_circle {
+            margin-top: 40px;
+        }
+        &_item {
+            margin-top: 54px;
+            text-align: left;
+            h2 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 120%;
+            }
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #7D7D7D;
+            margin-top: 16px;
+        }
+        &_photo {
+            border-radius: 60px 0px;
+            overflow: hidden;
+            margin-top: 40px;
+            img {
+            }
+        }
+    }
+}
